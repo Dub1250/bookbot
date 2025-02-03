@@ -9,14 +9,15 @@ def main():
         words = file_contents.split()
 #       wordCount = len(words)
 
-    for word in words:
-        for i in word:
-            p = i.lower()
-            if p in charDict:
-                charDict[p] += 1
-            else:
-                charDict[p] = 1
-
+    for c in file_contents:
+        i = c.lower()
+        if i == "":
+            charDict[""] += 1
+        elif i in charDict:
+            charDict[i] += 1
+        else:
+            charDict[i] = 1
+#    print(charDict[""])
     print(charDict)
 
 
