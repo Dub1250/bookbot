@@ -26,7 +26,8 @@ def main():
     print("--- Begin frankenstein.txt letter count ---")
     print(f"{wordCount} words found in the document\n\n")
     for c in charDict:
-        print(f"The '{c}' character was found {charDict[c]} times")    
+        print(f"The '{c}' character was found {charDict[c]} times")
+    print("\n--- End Report ---\n")
 
 
 if __name__ == "__main__":
